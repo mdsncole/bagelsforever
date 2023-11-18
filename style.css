@@ -1,0 +1,40 @@
+/* Global Styles - Mobile First*/
+html{
+    font-size: 16px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.75rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+}
+
+
+
+/* Home Page Styles */
+/* About Styles */
+/* Info Styles */
+/* Location Styles */
+/* Menu Styles */
+/* Order Styles */
+/* Reviews Styles */
+/* Varieties Styles */
+/* Tablet Styles */
+@media only screen and (min-width: 768px){}
+/* Desktop Styles */
+@media only screen and (min-width: 1200px){}

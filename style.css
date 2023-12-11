@@ -1,22 +1,28 @@
 /* Global Styles - Mobile First*/
-html{
+html {
     font-size: 16px;
     font-family: 'Public Sans', sans-serif;
 }
 
-h1{
+body {
+    width: 100%;
+}
+
+h1 {
     font-size: 3rem;
 }
 
-h2{
+h2 {
     font-size: 1.75rem;
 }
 
-li{
+ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -24,9 +30,51 @@ address {
     font-style: normal;
 }
 
+header img {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
 
 
 /* Home Page Styles */
+.hero-image {
+    width: 100%;
+}
+
+.divider {
+    background-color: #f25c31;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.home-img {
+    width: 50%;
+    /* height: 240px */
+}
+
+.home-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content p {
+    width: 50%;
+    padding: 10px;
+}
+
 /* About Styles */
 /* Info Styles */
 /* Location Styles */
@@ -35,6 +83,7 @@ address {
 /* Reviews Styles */
 /* Varieties Styles */
 /* Tablet Styles */
-@media only screen and (min-width: 768px){}
+@media only screen and (min-width: 768px) {}
+
 /* Desktop Styles */
-@media only screen and (min-width: 1200px){}
+@media only screen and (min-width: 1200px) {}

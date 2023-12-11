@@ -14,34 +14,61 @@
 
 <body id="home">
     <header>
+        <a href="index.html">
+            <img src="img/logo.jpg" alt="bagels forever logo">
+        </a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu/menu.html">Menu</a></li>
-                <li><a href="location/location.html">Location</a></li>
                 <li><a href="order/order.html">Order</a></li>
-                <li><a href="info/info.html">Bagel Info</a></li>
                 <li><a href="about/about.html">About</a></li>
-                <li><a href="reviews/reviews.html">Reviews</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="container">
+        <section class="hero-image">
             <img src="img/storefront.jpg" alt="bagels forever storefront">
         </section>
-        <div id="divider">
-            <p>Baking <span>real</span> Bagels since 1973!</p>
+
+        <div class="divider">
+            <p>Baking <span id="real">real</span> Bagels since 1973!</p>
         </div>
-        <section class="container">
-            <img src="img/hearth-baked.jpg" alt="hearth oven">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maxime magni suscipit iste sequi neque
-                quaerat
-                saepe aut minima recusandae odio, harum necessitatibus et accusamus similique quae enim minus incidunt.
+
+        <section class="home-content">
+            <!-- Hearth-baked-img credit: Photo by Louis Hansel on Unsplash  -->
+            <img src="img/hearth-baked.jpg" alt="hearth oven" class="home-img">
+            <p>Boiled then hearth-baked, our bagels quickly earned their name as the real deal.
             </p>
         </section>
+
+        <div class="divider">
+            <p>Visit our Retail Store!</p>
+        </div>
+
+        <section class="home-content">
+            <!-- <p>If you're in the Madison, WI area stop in and pick up a bagel sandwich! Just minutes from the Wisconsin
+                State Capitol building. <a href="menu/menu.html">View our menu.</a></p> -->
+            <a href="menu/menu.html">
+                <p>View our menu.</p>
+            </a>
+            <img src="img/hearth-baked.jpg" alt="" class="home-img">
+        </section>
     </main>
+    <footer>
+        <address>
+            <p>Bagels Forever</p>
+            <p>2947 University Ave, <br>
+                Madison, WI 53705</p>
+        </address>
+        <div id="hours">
+            <p>We're open 7 days a week!</p>
+            <p>M-F 6:30 A.M.- 8:00 P.M.<br>
+                S-S 6:30 A.M - 6:00 P.M.</p>
+        </div>
+    </footer>
     <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/49fc3d2e0b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

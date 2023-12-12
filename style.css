@@ -16,6 +16,20 @@ h2 {
     font-size: 1.75rem;
 }
 
+/* Header Styles */
+header img {
+    width: 80%;
+    margin: 0;
+}
+
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -26,25 +40,23 @@ a {
     text-decoration: none;
 }
 
-address {
-    font-style: normal;
-}
-
-header img {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-
-header nav ul {
+/* Footer Styles */
+footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    background-color: #242424;
+    color: white;
+}
+
+address {
+    font-style: normal;
     padding: 15px;
 }
 
+#hours{
+    padding: 15px;
+}
 
 /* Home Page Styles */
 .hero-image {
@@ -53,26 +65,38 @@ header nav ul {
 
 .divider {
     background-color: #f25c31;
+    color: white;
+    font-size: 1.25rem;
     padding: 10px 5px;
     display: flex;
     justify-content: center;
 }
 
+#real {
+    font-weight: 700;
+}
+
 .home-img {
     width: 50%;
-    /* height: 240px */
 }
 
 .home-content {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    background-color: #c0c0c0;
 }
 
 .home-content p {
     width: 50%;
     padding: 10px;
+}
+
+.home-content a p {
+    font-size: 1.75rem;
+
+    
 }
 
 /* About Styles */

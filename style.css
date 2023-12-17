@@ -43,23 +43,22 @@ a {
 /* Footer Styles */
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     background-color: #242424;
     color: white;
 }
 
-footer h1{
+footer h1 {
     font-size: 1rem;
 }
 
 address {
     font-style: normal;
-    padding: 15px;
 }
 
-#hours{
-    padding: 15px;
+.footer-content {
+    width: 50%;
 }
 
 /* Home Page Styles */
@@ -87,7 +86,7 @@ address {
 .home-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #c0c0c0;
 }
@@ -97,23 +96,55 @@ address {
     padding: 10px;
 }
 
-.home-content a p {
-    font-size: 1.75rem; 
+.home-content a {
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-iframe{
+iframe {
     width: 50%;
     height: auto;
 }
+
 /* About Styles */
-/* Info Styles */
-/* Location Styles */
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffba99;
+}
+
+.about-content h1, .about-content
+h2 {
+    background-color: #f25c31;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
 /* Menu Styles */
+/* -make collapsible */
+
 /* Order Styles */
 /* Reviews Styles */
 /* Varieties Styles */
-/* Tablet Styles */
-@media only screen and (min-width: 768px) {}
 
-/* Desktop Styles */
+/* Tablet Styles */
+@media only screen and (min-width: 768px) {
+
+    /* Tablet: Footer */
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+
+    /* Tablet: Home Page Styles */
+    /* Tablet: Desktop Styles */
+}
+
 @media only screen and (min-width: 1200px) {}

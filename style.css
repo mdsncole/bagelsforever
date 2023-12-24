@@ -6,8 +6,12 @@ html {
 
 body {
     width: 100%;
-    overflow: auto;
     margin: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
 
 h1 {
@@ -104,6 +108,9 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: Rubik Doodle Shadow;
+    font-weight: 700;
+    color: #242424;
 }
 
 iframe {
@@ -178,27 +185,38 @@ iframe {
     align-items: center;
 }
 
-.order-content h1, .order-content h2{
+.order-content h1,
+.order-content h2 {
     background-color: #f25c31;
     padding: 20px;
     margin: 0;
     width: 100%;
     display: flex;
     justify-content: center;
-        align-items: center;
+    align-items: center;
 }
 
-.order-content h1, .order-content h2, .order-content h3{
+.order-content h1,
+.order-content h2,
+.order-content h3 {
     color: white;
 }
 
-.order-content p{
+.order-content h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-content p {
     padding: 0 20px;
 }
 
-.importance1{
+.importance1 {
     font-size: 1.25rem;
+    
 }
+
 #order button {
     margin: 0;
     padding: 0;
@@ -207,6 +225,11 @@ iframe {
 .bagel-pack {
     width: 100%;
     height: 100%;
+}
+
+#order .bagel{
+    display: flex;
+    flex-direction: column;
 }
 
 /* Tablet Styles */

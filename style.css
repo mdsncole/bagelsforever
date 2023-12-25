@@ -12,7 +12,7 @@ body {
 html,
 body {
     overflow-x: hidden;
-}
+} 
 
 h1 {
     font-size: 3rem;
@@ -20,6 +20,10 @@ h1 {
 
 h2 {
     font-size: 1.75rem;
+}
+
+h1, h2, h3{
+    font-family: Baumans;
 }
 
 /* Header Styles */
@@ -31,7 +35,7 @@ header img {
 
 header nav ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     justify-content: space-between;
     padding: 15px;
 }
@@ -137,7 +141,7 @@ iframe {
     margin: 0;
 }
 
-.about-content h1 {
+.about-content h1, .about-content h2 {
     justify-content: center;
     text-align: center;
     background-color: #f25c31;
@@ -169,11 +173,12 @@ iframe {
     background-color: #ffba99;
 }
 
-.menu-content {
+#menu h2, .menu-content {
     padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Order Styles */
@@ -214,6 +219,8 @@ iframe {
 
 .importance1 {
     font-size: 1.25rem;
+    font-family: IBM Plex Mono;
+    font-weight: 300;
     
 }
 
@@ -228,8 +235,25 @@ iframe {
 }
 
 #order .bagel{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
+    align-items: center;
+        justify-content: center;
+    display: none;
+    overflow: hidden; */
+    flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+}
+
+.nutrition{
+    display: flex;
+    text-align: center;
+    width: 60%;
+    height: 70%;
 }
 
 /* Tablet Styles */

@@ -158,7 +158,7 @@ iframe {
 }
 
 /* Menu Styles */
-.collapsible {
+ .collapsible {
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -168,17 +168,45 @@ iframe {
     font-size: 15px;
 }
 
-.active,
+/* .active,
 .collapsible:hover {
     background-color: #ffba99;
-}
+}  */
 
-#menu h2, .menu-content {
-    padding: 0 18px;
+.menu-content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffba99;
+}
+
+.menu-content h1{
+    background-color: #f25c31;
+    color: white;
+    padding: 20px;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.menu-content h2, .menu-content h3{
+    color: white;
+}
+
+.menu-content-bagel h1, .menu-content-bagel h2{
+    margin-bottom: 0;
+}
+
+.menu-content p{
+        font-family: IBM Plex Mono;
+}
+
+.menu-content li{
+    padding: 0 15px 10px 15px;
+    font-size: 1rem;
 }
 
 /* Order Styles */
@@ -211,6 +239,8 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.75rem;
+    padding: 10px 0 0 0;
 }
 
 .order-content p {

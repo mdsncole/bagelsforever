@@ -12,7 +12,7 @@ body {
 html,
 body {
     overflow-x: hidden;
-} 
+}
 
 h1 {
     font-size: 3rem;
@@ -22,7 +22,9 @@ h2 {
     font-size: 1.75rem;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: Baumans;
 }
 
@@ -35,7 +37,7 @@ header img {
 
 header nav ul {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: space-between;
     padding: 15px;
 }
@@ -141,7 +143,8 @@ iframe {
     margin: 0;
 }
 
-.about-content h1, .about-content h2 {
+.about-content h1,
+.about-content h2 {
     justify-content: center;
     text-align: center;
     background-color: #f25c31;
@@ -158,7 +161,47 @@ iframe {
 }
 
 /* Menu Styles */
- .collapsible {
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffba99;
+}
+
+.menu-content h1 {
+    background-color: #f25c31;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-content h2,
+.menu-content h3 {
+    color: white;
+}
+
+.menu-content-bagel h1,
+.menu-content-bagel h2 {
+    margin-bottom: 0;
+}
+
+.menu-content p {
+    font-family: IBM Plex Mono;
+}
+
+.menu-content li {
+    padding: 0 15px 10px 15px;
+    font-size: 1rem;
+}
+
+/* Order Styles */
+.collapsible {
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -173,43 +216,6 @@ iframe {
     background-color: #ffba99;
 }  */
 
-.menu-content{
-    display: flex;
-    flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #ffba99;
-}
-
-.menu-content h1{
-    background-color: #f25c31;
-    color: white;
-    padding: 20px;
-        margin: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-}
-
-.menu-content h2, .menu-content h3{
-    color: white;
-}
-
-.menu-content-bagel h1, .menu-content-bagel h2{
-    margin-bottom: 0;
-}
-
-.menu-content p{
-        font-family: IBM Plex Mono;
-}
-
-.menu-content li{
-    padding: 0 15px 10px 15px;
-    font-size: 1rem;
-}
-
-/* Order Styles */
 .order-content {
     background-color: #ffba99;
     display: flex;
@@ -235,7 +241,7 @@ iframe {
     color: white;
 }
 
-.order-content h3{
+.order-content h3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,7 +257,7 @@ iframe {
     font-size: 1.25rem;
     font-family: IBM Plex Mono;
     font-weight: 300;
-    
+
 }
 
 #order button {
@@ -264,23 +270,17 @@ iframe {
     height: 100%;
 }
 
-#order .bagel{
-    /* display: flex;
+#order .bagel {
     flex-direction: column;
     align-items: center;
-        justify-content: center;
+    justify-content: center;
+    text-align: center;
     display: none;
-    overflow: hidden; */
-    flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: stretch;
+    overflow: hidden;
+
 }
 
-.nutrition{
-    display: flex;
+.bagel img {
     text-align: center;
     width: 60%;
     height: 70%;

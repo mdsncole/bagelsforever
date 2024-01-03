@@ -28,14 +28,69 @@ h3 {
     font-family: Baumans;
 }
 
-/* Header Styles */
+/* Nav Styles */
 header img {
     width: 80%;
     margin: 0;
 }
 
+nav{
+    position: relative;
+    width: 100vw;
+    box-shadow: 0 0 10px lightblue;
+    background-color: #242424;
+}
 
-header nav ul {
+nav ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 2rem;
+    border: solid black 1px;
+}
+
+.list-item{
+     position: relative;
+     padding: 1.5rem 1rem;
+     cursor: pointer;
+}
+
+.list-item:hover, .list-item:focus{
+    opacity: 1;
+    visibility: visible;
+}
+
+.item-dropdown{
+    position: absolute;
+    top: 4rem;
+    left: -1rem;
+    background-color: white;
+    width: 12rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out;
+}
+
+#logo{
+    margin-right: auto;
+        width: 10rem;
+        cursor: pointer;
+}
+
+
+/* header nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,7 +101,7 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
+} */
 
 a {
     text-decoration: none;

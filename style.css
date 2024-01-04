@@ -43,21 +43,54 @@ nav{
 
 nav ul{
     display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    /* display: flex;
     flex-direction: row;
     margin: 0;
-    padding: 0;
+    padding: 0; */
 }
 
 nav ul li {
-    display: flex;
+    list-style: none;
+        padding: 4px;
+        position: relative;
+        transition: 0.5s;
+        display: block;
+    /* display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 2rem;
     margin: 0 2rem;
-    border: solid black 1px;
+    border: solid black 1px; */
 }
 
-.list-item{
+nav ul li a{
+    text-decoration: none;
+        padding: 5px 10px;
+}
+
+nav ul li a:focus {
+    background: #2ecc71;
+        border-radius: 6px;
+}
+
+nav ul li ul {
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    background: #27ae60;
+    border-radius: 6px;
+    width: 100%;
+    padding: 10px 2px;
+    box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* .list-item{
      position: relative;
      padding: 1.5rem 1rem;
      cursor: pointer;
@@ -66,9 +99,10 @@ nav ul li {
 .list-item:hover, .list-item:focus{
     opacity: 1;
     visibility: visible;
-}
+} */
 
-.item-dropdown{
+
+/* .item-dropdown{
     position: absolute;
     top: 4rem;
     left: -1rem;
@@ -81,7 +115,7 @@ nav ul li {
     opacity: 0;
     visibility: hidden;
     transition: opacity 200ms ease-in-out;
-}
+} */
 
 #logo{
     margin-right: auto;
@@ -102,10 +136,10 @@ ul {
     margin: 0;
     padding: 0;
 } */
-
+/* 
 a {
     text-decoration: none;
-}
+} */
 
 /* Footer Styles */
 footer {

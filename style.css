@@ -57,9 +57,10 @@ nav ul li {
     position: relative;
     transition: 0.5s;
     display: block;
-    /* display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    /* 
     gap: 2rem;
     margin: 0 2rem;
     border: solid black 1px; */
@@ -387,12 +388,63 @@ iframe {
 /* Tablet Styles */
 @media only screen and (min-width: 768px) {
 
+    /* Tablet: Global */
+    h1 {
+            font-size: 4rem;
+        }
+    
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3{
+            font-size: 2rem;
+        }
+
+        p{
+            font-size: 1.5rem;
+        }
+
+        .importance1{
+            font-size: 1.75rem;
+        }
+
+    /* Tablet: Navbar */
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+
     /* Tablet: Footer */
     footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
+
+        footer h1 {
+            font-size: 1.5rem;
+        }
+
+        footer p{
+            font-size: 1rem;
+        }
+
+    
+    /* Tablet: Home Page */
+        .home-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    /* Tablet: Order Page */
+    #order-content{
+        display: flex;
+        
+    }
+
 
 
 

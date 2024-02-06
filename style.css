@@ -133,19 +133,6 @@ nav ul li:hover ul {
     transition: opacity 200ms ease-in-out;
 } */
 
-
-/* header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-} */
 /* 
 a {
     text-decoration: none;
@@ -390,30 +377,47 @@ iframe {
 
     /* Tablet: Global */
     h1 {
-            font-size: 4rem;
-        }
-    
-        h2 {
-            font-size: 3rem;
-        }
+        font-size: 4rem;
+    }
 
-        h3{
-            font-size: 2rem;
-        }
+    h2 {
+        font-size: 3rem;
+    }
 
-        p{
-            font-size: 1.5rem;
-        }
+    h3 {
+        font-size: 2rem;
+    }
 
-        .importance1{
-            font-size: 1.75rem;
-        }
+    p {
+        font-size: 1.5rem;
+    }
+
+    .importance1 {
+        font-size: 1.75rem;
+    }
 
     /* Tablet: Navbar */
-    nav ul{
+    nav ul {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
+
+        header nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        nav ul li ul {
+            display: flex;
+        }
 
     /* Tablet: Footer */
     footer {
@@ -422,34 +426,63 @@ iframe {
         justify-content: space-around;
     }
 
-        footer h1 {
-            font-size: 1.5rem;
-        }
+    footer h1 {
+        font-size: 1.5rem;
+    }
 
-        footer p{
-            font-size: 1rem;
-        }
-
-    
-    /* Tablet: Home Page */
-        .home-content {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-    /* Tablet: Order Page */
-    #order-content{
-        display: flex;
-        
+    footer p {
+        font-size: 1rem;
     }
 
 
+    /* Tablet: Home Page */
+    .home-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 400px;
+    }
+
+    .home-content a{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        text-decoration: none;
+    }
+
+    .home-content a p {
+        font-size: 3rem;
+        padding: 0;
+
+    }
+
+        iframe {
+            width: 50%;
+            height: 400px;
+        }
+
+    /* Tablet: Order Page */
+    #order-content {
+        display: flex;
+
+    }
 
 
-    /* Tablet: Home Page Styles */
-    /* Tablet: Desktop Styles */
+    /* Tablet: About Styles */
+    /* Tablet: Menu Styles */
+    .menu-content ul {
+        border: solid black 1px;
+        display: flex;
+    }
+
+    .menu-content li {
+        padding: 0 15px 10px 15px;
+        font-size: 2rem;
+        display: flex;
+
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {}

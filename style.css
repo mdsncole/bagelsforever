@@ -139,6 +139,9 @@ a {
 } */
 
 /* Footer Styles */
+.bottom{
+    padding-bottom: 20px;
+}
 footer {
     background-color: #242424;
     color: #c0c0c0;
@@ -484,23 +487,38 @@ iframe {
         font-size: 15px;
     }
 
-        #order button {
-            margin: 15px 10px;
-        }
+    #order button {
+        margin: 15px 10px;
+    }
 
     /* Tablet: About Styles */
     /* Tablet: Menu Styles */
+    .menu-content h2{
+        padding-top: 10px;
+    }
     .menu-content ul {
-        border: solid black 1px;
-        display: flex;
+        /* border: solid black 1px; */
+        width: auto;
+        height: auto;
+        padding-bottom: 10px;
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around; */
     }
 
     .menu-content li {
-        padding: 0 15px 10px 15px;
         font-size: 2rem;
-        display: flex;
-
+        /* border: solid black 1px; */
     }
+
+    .long-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
 
 }
 

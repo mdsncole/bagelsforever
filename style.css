@@ -496,8 +496,17 @@ iframe {
     /* Tablet: About Styles */
     /* Tablet: Menu Styles */
     .menu-content h2{
-        padding-top: 10px;
+        background-color: #f25b317a;
+        padding: 10px 20px;
+        border-radius: 5%;
     }
+
+    .menu-content h3{
+        background-color: #f25b317a;
+            padding: 10px 20px;
+            border-radius: 5%;
+    }
+
     .menu-content ul {
         /* border: solid black 1px; */
         width: auto;
@@ -511,6 +520,7 @@ iframe {
 
     .menu-content li {
         font-size: 2rem;
+        text-align: center;
         /* border: solid black 1px; */
     }
 
@@ -519,6 +529,10 @@ iframe {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    .group{
+        text-align: center;
     }
 
 

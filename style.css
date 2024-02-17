@@ -44,16 +44,59 @@ nav {
     width: 100vw;
     box-shadow: 0 0 10px #242424;
     background-color: #242424;
+ }
+
+#logo {
+    width: 8rem;
+    cursor: pointer;
 }
 
-nav ul {
+.topnav {
+    background-color: #242424;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.topnav a {
+    color: #f25c31;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 10%;
+}
+
+
+.active {
+    background-color: #ffba99;
+    color: #242424;
+}
+
+.topnav a:hover {
+    background-color: #ffba99;
+    color: #242424;
+}
+
+.topnav.responsive {
+    position: relative;
+}
+
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+
+/* nav ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     margin: 0;
-    /* display: flex;
-    padding: 0; */
+    display: flex;
+    padding: 0; 
 }
 
 nav ul li {
@@ -65,10 +108,9 @@ nav ul li {
     text-align: center;
     display: flex;
     justify-content: flex-start;
-    /* 
     gap: 2rem;
     margin: 0 2rem;
-    border: solid black 1px; */
+    border: solid black 1px; 
 }
 
 nav ul li a {
@@ -105,13 +147,7 @@ nav ul li:hover ul {
     border-radius: 10%;
 }
 
-#logo {
-    margin-right: auto;
-    width: 8rem;
-    cursor: pointer;
-}
-
-/* .list-item{
+.list-item{
      position: relative;
      padding: 1.5rem 1rem;
      cursor: pointer;
@@ -120,10 +156,10 @@ nav ul li:hover ul {
 .list-item:hover, .list-item:focus{
     opacity: 1;
     visibility: visible;
-} */
+} 
 
 
-/* .item-dropdown{
+.item-dropdown{
     position: absolute;
     top: 4rem;
     left: -1rem;
@@ -136,12 +172,13 @@ nav ul li:hover ul {
     opacity: 0;
     visibility: hidden;
     transition: opacity 200ms ease-in-out;
-} */
+} 
 
-/* 
+
 a {
     text-decoration: none;
-} */
+}
+*/
 
 /* Footer Styles */
 .bottom {
@@ -170,8 +207,8 @@ address {
 }
 
 /* Home Page Styles */
-.hero-content {
-    display: flex;
+#hero-content {
+    background-color: #ffba99;
 
 }
 
@@ -180,12 +217,13 @@ address {
 }
 
 .divider {
-    background-color: #f25c31;
     color: white;
     font-size: 1.25rem;
     padding: 8px 5px;
     display: flex;
     justify-content: center;
+    background-color: #f25c31;
+    width: 100%;
 }
 
 #real {
@@ -400,6 +438,43 @@ iframe {
     height: 70%;
 }
 
+/* Nav Specific Styles 375px and above */
+@media only screen and (min-width: 375px){
+    .topnav .icon {
+            display: none;
+        }
+    
+        .topnav.responsive {
+            position: relative;
+        }
+    
+        /* .topnav.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        } */
+    
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    
+        /* .topnav.responsive {
+            float: none;
+        }
+    
+        .topnav.responsive {
+            position: relative;
+        }
+    
+        .topnav.responsive {
+            display: block;
+            width: 100%;
+            text-align: left;
+        } */
+}
+
 /* Tablet Styles */
 @media only screen and (min-width: 768px) {
 
@@ -425,7 +500,13 @@ iframe {
     }
 
     /* Tablet: Navbar */
-    nav ul {
+    /* .topnav a:not(:first-child) {
+        
+    } */
+
+    
+
+    /* nav ul {
         display: flex;
         flex-direction: column;
     }
@@ -444,7 +525,7 @@ iframe {
 
     nav ul li ul {
         display: flex;
-    }
+    } */
 
     /* Tablet: Footer */
     footer {
@@ -465,7 +546,7 @@ iframe {
 
 
     /* Tablet: Home Page */
-        /* .home-img {
+    /* .home-img {
             width: 50%;
             height: auto;
         } */
@@ -622,6 +703,18 @@ iframe {
         font-size: 3rem;
     }
 
+    /* Desktop: Home Styles */
+    #hero-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .hero-image {
+        width: 80%;
+    }
+
     /* Desktop: About Styles */
     .h1-content h1 {
         font-size: 12rem;
@@ -629,5 +722,6 @@ iframe {
     }
 
     /* Desktop: Order Styles */
-    
+    /*  */
+
 }

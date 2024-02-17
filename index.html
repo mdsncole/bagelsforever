@@ -18,11 +18,24 @@
 <body id="home">
     <header>
         <nav>
+            <div class="topnav">
+        <img src="img/bagel-icon.png" alt="bagel icon" id="logo">
+        </div>
+        <!-- Icon Credit:
+        <a href="https://www.flaticon.com/free-icons/bagel" title="bagel icons">Bagel icons created by Freepik - Flaticon</a> -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active nav-item">Home</a>
+            <a href="menu/menu.html" class="nav-item">Menu</a>
+            <a href="order/order.html" class="nav-item">Order</a>
+            <a href="about/about.html" class="nav-item">About</a>
+        </div>
+        </nav>
+        <!-- <nav>
             <ul>
                 <li><a href="index.html">
                         <img src="img/bagel-icon.png" alt="bagel icon" id="logo">
-                        <!--Icon Credit:
-                             <a href="https://www.flaticon.com/free-icons/bagel" title="bagel icons">Bagel icons created by Freepik - Flaticon</a> -->
+                        Icon Credit:
+                             <a href="https://www.flaticon.com/free-icons/bagel" title="bagel icons">Bagel icons created by Freepik - Flaticon</a> 
                     </a></li>
                 <li class="dropdown">Dropdown
                     <ul>
@@ -33,19 +46,18 @@
                     </ul>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <main>
-        <section>
+        <section id="hero-content">
             <img src="img/storefront.jpg" alt="bagels forever storefront" class="hero-image">
+            <div class="divider">
+                <p>Baking <span id="real">real</span> Bagels since 1973!</p>
+            </div>
         </section>
 
-        <div class="divider">
-            <p>Baking <span id="real">real</span> Bagels since 1973!</p>
-        </div>
-
         <section class="home-content">
-            <img src="img/bagels.jpg" alt="variety of bagels" class="home-img">
+            <img src="img/bagels.jpg" alt="variety of bagels" id="home-img">
             <p>Boiled then hearth-baked, our bagels quickly earned their name as the real deal.
             </p>
         </section>

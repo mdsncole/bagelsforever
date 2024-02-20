@@ -17,21 +17,17 @@
 <body id="order">
     <header>
         <nav>
-            <ul>
-                <li><a href="../index.html">
-                        <img src="../img/bagel-icon.png" alt="bagel icon" id="logo">
-                        <!--Icon Credit:
-                                 <a href="https://www.flaticon.com/free-icons/bagel" title="bagel icons">Bagel icons created by Freepik - Flaticon</a> -->
-                    </a></li>
-                <li class="dropdown">Dropdown
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../menu/menu.html">Menu</a></li>
-                        <li><a href="../order/order.html">Order</a></li>
-                        <li><a href="../about/about.html">About</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="topnav">
+                <img src="../img/bagel-icon.png" alt="bagel icon" id="logo">
+            </div>
+            <!-- Icon Credit:
+                <a href="https://www.flaticon.com/free-icons/bagel" title="bagel icons">Bagel icons created by Freepik - Flaticon</a> -->
+            <div class="topnav" id="myTopnav">
+                <a href="../index.html" class="active nav-item">Home</a>
+                <a href="../menu/menu.html" class="nav-item">Menu</a>
+                <a href="order.html" class="nav-item">Order</a>
+                <a href="../about/about.html" class="nav-item">About</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -90,7 +86,7 @@
                     brown sugar,
                     fructose,
                     malt, salt, cornmeal, yeast, natural flavors.</p>
-                <img src="../img/bluebarry-nutrition.jpg" alt="bagel nutrition">
+                <img src="../img/bluebarry-nutrition.jpg" alt="bagel nutrition" class="nutrition">
             </div>
 
             <button type="button" class="collapsible"><img src="../img/cinn-raisin-bagel.jpg" alt="bagel package"
@@ -101,7 +97,7 @@
                     reduced iron,
                     thiamine mononitrate, riboflavin,
                     folic acid) water, raisins, sugar, malt, salt, cinnamon, cornmeal, yeast.</p>
-                <img src="../img/cinn-raisin-nutrition.jpg" alt="bagel nutrition">
+                <img src="../img/cinn-raisin-nutrition.jpg" alt="bagel nutrition" class="nutrition">
             </div>
 
             <button type="button" class="collapsible"><img src="../img/cran-oat-bagel.jpg" alt="bagel package"
@@ -115,7 +111,7 @@
                     sugar,
                     fructose,
                     honey, malt, salt, oat flour, cornmeal, yeast.</p>
-                <img src="../img/cran-oat-nutrition.jpg" alt="bagel nutrition">
+                <img src="../img/cran-oat-nutrition.jpg" alt="bagel nutrition" class="nutrition">
             </div>
 
             <button type="button" class="collapsible"><img src="../img/egg-bagel.jpg" alt="bagel package"
@@ -126,7 +122,7 @@
                     reduced iron,
                     thiamine mononitrate, riboflavin,
                     folic acid) water, eggs, sugar, malt, salt, cornmeal, yeast, annatto turmeric (for color).</p>
-                <img src="../img/egg-nutrition.jpg" alt="bagel nutrition">
+                <img src="../img/egg-nutrition.jpg" alt="bagel nutrition" class="nutrition">
             </div>
 
             <button type="button" class="collapsible"><img src="../img/hole-wheat-bagel.jpg" alt="bagel package"
@@ -138,7 +134,7 @@
                     thiamine mononitrate, riboflavin,
                     folic acid) water, whole wheat flour, honey, wheat germ, wheat bran, sugar, malt, salt, cornmeal,
                     yeast.</p>
-                <img src="../img/hole-wheat-nutrition.jpg" alt="bagel nutrition">
+                <img src="../img/hole-wheat-nutrition.jpg" alt="bagel nutrition" class="nutrition">
             </div>
 
             <button type="button" class="collapsible"><img src="../img/maple-cinn-bagel.jpg" alt="bagel package"
@@ -152,7 +148,7 @@
                     cornmeal, pure
                     vanilla,
                     natural flavors, yeast.</p>
-                <img src="../img/maple-cinn-nutrition.jpg" alt="bagel nutrition">
+                <img src="../img/maple-cinn-nutrition.jpg" alt="bagel nutrition" class="nutrition">
             </div>
 
             <button type="button" class="collapsible"><img src="../img/onion-bagel.jpg" alt="bagel package"
@@ -163,7 +159,7 @@
                     reduced iron,
                     thiamine mononitrate, riboflavin,
                     folic acid) water, onions, malt, salt, sugar, cornmeal, yeast.</p>
-                <img src="../img/onion-nutrition.jpg" alt="bagel nutrition">
+                <img src="../img/onion-nutrition.jpg" alt="bagel nutrition" class="nutrition">
             </div>
 
             <button type="button" class="collapsible"><img src="../img/plain-bagel.jpg" alt="bagel package"
@@ -174,7 +170,7 @@
                     reduced iron,
                     thiamine mononitrate, riboflavin,
                     folic acid) water, malt, salt, sugar, cornmeal, yeast.</p>
-                <img src="../img/plain-nutrition.jpg" alt="bagel nutrition">
+                <img src="../img/plain-nutrition.jpg" alt="bagel nutrition" class="nutrition">
             </div>
 
             <button type="button" class="collapsible"><img src="../img/poppy-bagel.jpg" alt="bagel package"
@@ -185,7 +181,7 @@
                     reduced iron,
                     thiamine mononitrate, riboflavin,
                     folic acid) water, poppy seeds, malt, salt, sugar, cornmeal, yeast.</p>
-                <img src="../img/poppy-nutrition.jpg" alt="bagel nutrition">
+                <img src="../img/poppy-nutrition.jpg" alt="bagel nutrition" class="nutrition">
             </div>
 
             <button type="button" class="collapsible"><img src="../img/pumpernickel-bagel.jpg" alt="bagel package"
@@ -197,7 +193,7 @@
                     thiamine mononitrate, riboflavin,
                     folic acid) water, pumpernickel flour, rye flour, caramel, malt, salt, sugar, onions, cornmeal,
                     yeast.</p>
-                <img src="../img/pumpernickel-nutrition.jpg" alt="bagel nutrition">
+                <img src="../img/pumpernickel-nutrition.jpg" alt="bagel nutrition" class="nutrition">
             </div>
 
             <button type="button" class="collapsible"><img src="../img/rye-bagel.jpg" alt="bagel package"
@@ -208,7 +204,7 @@
                     reduced iron,
                     thiamine mononitrate, riboflavin,
                     folic acid) water, dark rye flour, caraway seeds, malt, salt, sugar, cornmeal, yeast.</p>
-                <img src="../img/rye-nutrition.jpg" alt="bagel nutrition">
+                <img src="../img/rye-nutrition.jpg" alt="bagel nutrition" class="nutrition">
             </div>
 
             <button type="button" class="collapsible"><img src="../img/sesame-bagel.jpg" alt="bagel package"
@@ -219,7 +215,7 @@
                     reduced iron,
                     thiamine mononitrate, riboflavin,
                     folic acid) water, sesame seeds, malt, salt, sugar, cornmeal, yeast.</p>
-                <img src="../img/sesame-nutrition.jpg" alt="bagel nutrition">
+                <img src="../img/sesame-nutrition.jpg" alt="bagel nutrition" class="nutrition">
             </div>
             </section>
 

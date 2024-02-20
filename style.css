@@ -69,13 +69,11 @@ nav {
 
 
 .active {
-    background-color: #ffba99;
-    color: #242424;
+    text-shadow: #f25c31 1px 0 1rem;
 }
 
 .topnav a:hover {
-    background-color: #ffba99;
-    color: #242424;
+        text-shadow: #ffba99 1px 0 1rem;
 }
 
 .topnav.responsive {
